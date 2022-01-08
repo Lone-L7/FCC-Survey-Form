@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Help us improve our sites!</p>
+    </header>
+    <form action="" id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+        <label for="age" id="number-label">Age</label>
+        <input type="number" name="age" id="number" min=13 max=500 placeholder="Your Age">
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+        <label for="genre">What is your favorite genre?</label>
+        <select name="genre" id="dropdown">
+            <option value="pop">Pop</option>
+            <option value="rock">Rock</option>
+            <option value="hiphop">Hip Hop</option>
+            <option value="jazz">Jazz</option>
+            <option value="indiepop">Indie Pop</option>
+            <option value="blues">Blues</option>
+            <option value="misc">Misc</option>
+        </select>
+
+        <label for="opinion">Do you enjoy our website so far?</label>
+        <span><input type="radio" name="opinion" id="radio" value="yes"><label for="yes">yes</label></span>
+        <span><input type="radio" name="opinion" id="radio" value="no"><label for="no">no</label></span>
+
+        <label for="place">Where do you listen to your music to?</label>
+        <span><input type="checkbox" name="place" id="check" value="casette"><label for="casette">Casette</label></span>
+        <span><input type="checkbox" name="place" id="check" value="cd"><label for="cd">CD</label></span>
+        <span><input type="checkbox" name="place" id="check" value="vinyl"><label for="vinyl">Vinyl</label></span>
+        <span><input type="checkbox" name="place" id="check" value="online"><label for="online">Online
+                Platform</label></span>
+
+        <label for="feedback">Is there any suggestion or additional feedback for us?</label><textarea name="feedback"
+            id="textarea" cols="30" rows="20"></textarea>
+
+        <button id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
